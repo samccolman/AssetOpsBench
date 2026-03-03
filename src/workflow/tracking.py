@@ -2,7 +2,7 @@
 Sample client for tracking Asset Ops Bench runs
 
 run this like:
-$ uv run mcp/plan_execute/tracking.py 
+$ uv run src/workflow/tracking/tracking.py 
 
 """
 from os import environ
@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 from scenario_client.client import AOBench
 
 from llm.litellm import LiteLLMBackend
-from plan_execute.runner import PlanExecuteRunner
+from workflow.runner import PlanExecuteRunner
 
 
 def main():
@@ -90,3 +90,4 @@ def main():
 if __name__ == '__main__':
     load_dotenv()
     main()
+
