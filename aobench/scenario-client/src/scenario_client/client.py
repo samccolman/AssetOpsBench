@@ -204,7 +204,7 @@ class AOBench:
 
                     mlflow.set_tracking_uri(uri=tracking_uri)
 
-                    mlflow.langchain.autolog()
+                    mlflow.autolog()
                     mlflow.set_experiment(experiment_id=experiment_id)
 
                     return scenario_set, tracking_context
