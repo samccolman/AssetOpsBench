@@ -24,6 +24,7 @@ dependencies = [
     "pyyaml>=6.0",
     "litellm>=1.0",
     "python-dotenv>=1.0",
+    "scenario-client",
 ]
 
 [project.scripts]
@@ -50,4 +51,9 @@ norecursedirs = ["src/tmp"]
 filterwarnings = [
     "ignore:Core Pydantic V1 functionality:UserWarning",
 ]
+
+
+
+[tool.uv.sources]
+scenario-client = {path = "./aobench/scenario-client"}
 
