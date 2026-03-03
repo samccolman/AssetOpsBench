@@ -46,7 +46,7 @@ dev = [
 package = true
 
 [tool.uv.sources]
-scenario-client = {path = "./aobench/src/scenario_client"}
+scenario-client = {path = "./aobench/scenario-client"}
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
